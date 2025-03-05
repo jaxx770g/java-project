@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clculatorcss.css">
+</head>
+<body>
+    <div id="big">
+        <div id="h"> <input type="text"id="v" readonly ></div>
+        <div class="container">
+            <div class="container1">
+               <div class="j"><button id="hi"onclick="
+                hee=hee + '1';document.querySelector('#v').value=hee;">1</button> </div>
+               <div class="j"> <button id="h2" onclick="
+                hee=hee + '2';document.querySelector('#v').value=hee;">2</button></div>
+               <div class="j"><button id="h3"onclick="
+                hee=hee + '3';document.querySelector('#v').value=hee;">3</button></div>
+            </div>
+
+            <div class="container2"> 
+                <div class="a"><button id="h4" onclick="
+                hee=hee + '4';document.querySelector('#v').value=hee;">4</button></div>
+                <div class="a"><button id="h5" onclick="
+                hee=hee + '5';document.querySelector('#v').value=hee;">5</button></div>
+                <div class="a"><button id="h6" onclick="
+                hee=hee + '6';document.querySelector('#v').value=hee;">6</button></div>
+
+            </div>
+            <div class="container3"> 
+                <div class="y"><button id="h7" onclick="
+                hee=hee + '7';document.querySelector('#v').value=hee;">7</button></div>
+                <div class="y"><button id="h8"onclick="
+                hee=hee + '8';document.querySelector('#v').value=hee;">8</button></div>
+                <div class="y"><button id="h9" onclick="
+                hee=hee + '9';document.querySelector('#v').value=hee;">9</button></div>
+    
+          </div>
+           <div class="container4"> 
+            <div class="x"><button id="h0" onclick="
+                hee=hee + '0';document.querySelector('#v').value=hee;">0</button></div>
+            <div class="x"><button id="h+" onclick="
+                hee=hee + '+';document.querySelector('#v').value=hee;">+</button></div>
+            <div class="x"><button id="h=" onclick="
+               let result=eval(hee);
+               hee=result;
+               document.querySelector('#v').value=hee;">=</button></div>
+              
+
+            </div>
+            <div class="container5"> 
+                <div class="z"><button id="h/"onclick="
+                hee=hee + '/';document.querySelector('#v').value=hee;">/</button></div>
+                <div class="z"><button id="h*" onclick="hee=hee + '*';document.querySelector('#v').value=hee;">*</button></div>
+             
+                <div class="z"><button id="h-"onclick="
+                hee=hee + '-';document.querySelector('#v').value=hee;">-</button></div>
+
+            </div>
+           
+            <div class="container6"> 
+                <div class="t"><button id="c" onclick="
+                hee='';document.querySelector('#v').value=hee;">clear</button></div>
+                <div class="t"><button id="hr" onclick="
+                hee=hee + '.';document.querySelector('#v').value=hee;">.</button></div>
+               </div>
+
+            
+
+           
+          
+              
+        </div>
+    </div>
+    <script>
+        let hee = '';
+        document.querySelector('#v').value=hee;
+         
+        
+    </script>
+</body>
+</html>
